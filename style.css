@@ -59,7 +59,6 @@ body {
 .card__image {
   border-radius: 10px;
   width: 336px;
-  margin-bottom: -12px;
 }
 .card__content {
   display: grid;
