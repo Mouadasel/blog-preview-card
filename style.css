@@ -49,7 +49,6 @@ body {
 .card {
   display: grid;
   width: 384px;
-  height: 522px;
   gap: 24px;
   background-color: var(--color-white);
   padding: 24px;
