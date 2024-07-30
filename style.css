@@ -1,0 +1,143 @@
+/* Css variable */
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-gray-950: #111;
+  --color-gray-500: #6b6b6b;
+  --color-white: #fff;
+}
+
+/* Css reset */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  display: inline-block;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+/* end */
+body {
+  font-family: "Figtree", sans-serif;
+  color: var(--color-gray-950);
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  background-color: var(--color-yellow);
+}
+.card {
+  display: grid;
+  width: 384px;
+  height: 522px;
+  gap: 24px;
+  background-color: var(--color-white);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 var(--color-gray-950);
+  border: 1px solid var(--color-gray-950);
+}
+.card__image {
+  border-radius: 10px;
+  width: 336px;
+  margin-bottom: -12px;
+}
+.card__content {
+  display: grid;
+  gap: 12px;
+  line-height: 1.5;
+}
+.card__content-category {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: var(--color-yellow);
+  border-radius: 4px;
+  max-width: 82px;
+  height: 29px;
+  padding: 4px 12px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card__content-datePublish {
+  font-size: 14px;
+  font-weight: medium;
+}
+.card__content-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.card__content-title:hover,
+.card__content-title:active,
+.card__content-title:focus {
+  color: var(--color-yellow);
+  cursor: pointer;
+}
+.card__content-description {
+  font-size: 16px;
+  font-weight: medium;
+  color: hsl(0, 0%, 42%);
+}
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.card__author-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.card__author-img {
+  width: 32px;
+  height: 32px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* responsive */
+
+@media (max-width: 375px) {
+  .card {
+    width: 327px;
+    height: 501px;
+  }
+  .card__image {
+    width: 279px;
+  }
+  .card__content-category {
+    font-size: 12px;
+    width: 73px;
+  }
+  .card__content-datePublish {
+    font-size: 12px;
+  }
+  .card__content-title {
+    font-size: 20px;
+  }
+  .card__content-description {
+    font-size: 14px;
+  }
+
+}
